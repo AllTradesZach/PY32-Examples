@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Zach Miller, Personal, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\zamaz\Documents\PY32_Test_LED_Blink\PY32_Test_LED_Blink.uvprojx
+Project File Date:  03/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Objects/main.c(24): warning: In file included from...
+Objects/main.h(33): warning: In file included from...
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal.h(33): warning: In file included from...
+./Objects\py32f0xx_hal_conf.h(186): warning: In file included from...
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(314): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+  314 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(330): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+  330 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(361): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+  361 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(1007): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+ 1007 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(2003): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+ 2003 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(2051): warning: 'USE_HAL_TIM_REGISTER_CALLBACKS' is not defined, evaluates to 0 [-Wundef]
+ 2051 | #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
+      |      ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(324): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
+  324 |   DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+      |                                ^
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_tim.h(317): warning: padding size of 'TIM_HandleTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+  317 | typedef struct
+      |         ^
+Objects/main.c(94): warning: unused parameter 'htim' [-Wunused-parameter]
+   94 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |                                                       ^
+Objects/main.c(24): warning: In file included from...
+Objects/main.h(33): warning: In file included from...
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal.h(33): warning: In file included from...
+./Objects\py32f0xx_hal_conf.h(146): warning: In file included from...
+../PY32F0xx_Firmware-master/PY32F0xx_Firmware-master/Drivers/PY32F0xx_HAL_Driver/Inc\py32f0xx_hal_dma.h(124): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  124 |   void                  *Parent;                                                      /*!< Parent object state                    */
+      |                          ^
+Objects/main.c(142): warning: function 'APP_ErrorHandler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+  142 | {
+      | ^
+11 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=5824 RO-data=308 RW-data=204 ZI-data=1192  
+".\Objects\PY32_Test_LED_Blink.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Puya
+                https://www.puyasemi.com/uploadfiles/Puya.PY32F0xx_DFP.1.2.0.pack
+                Puya::PY32F0xx_DFP@1.2.0
+                Puya PY32F0 Series Device Support
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/zamaz/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/zamaz/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.0/Drivers/CMSIS/Device/Puya/PY32F0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Puya::Device:Startup@1.0.0
+      Source file:   Drivers/CMSIS/Device/Puya/PY32F0xx/Source/Templates/arm/startup_py32f003x6.s
+      Include file:  Drivers/CMSIS/Device/Puya/PY32F0xx/Include/py32f0xx.h
+      Source file:   Drivers/CMSIS/Device/Puya/PY32F0xx/Source/Templates/system_py32f0xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
